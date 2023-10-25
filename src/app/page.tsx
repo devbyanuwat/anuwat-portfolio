@@ -45,7 +45,11 @@ export default function Home() {
         </Box>
         <CardPothai />
         <hr />
-        <Flex gap={6} justify={"center"}>
+        <Flex
+          gap={6}
+          justify={"center"}
+          direction={{ base: "column", md: "row" }}
+        >
           <CardAnuwat />
           <CardToey />
           <CardK />
