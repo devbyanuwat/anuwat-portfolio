@@ -17,6 +17,12 @@ import {
 } from "@chakra-ui/react";
 import Testimonials from "@/components/Testimonials";
 import { useEffect } from "react";
+import CardPothai from "@/components/CardPothai";
+import CardAnuwat from "@/components/CardAnuwat";
+import CardToey from "@/components/CardToey";
+import CardK from "@/components/CardK";
+import CardNoppawut from "@/components/CardNoppawut";
+import TimeLine from "@/components/Timeline";
 
 export default function Home() {
   const toast = useToast();
@@ -33,11 +39,23 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Container maxW={"5xl"} p={1}>
-        <Box maxW={"3xl"} p={5}>
+      <Container maxW={"6xl"} p={1}>
+        <Box maxW={"6xl"} p={5} width={"full"}>
           <Hero />
         </Box>
-
+        <CardPothai />
+        <hr />
+        <Flex gap={6} justify={"center"}>
+          <CardAnuwat />
+          <CardToey />
+          <CardK />
+          <CardNoppawut />
+        </Flex>
+        <Flex justify={"center"} justifyContent={"center"}>
+          <Box maxW={"full"}>
+            <TimeLine />
+          </Box>
+        </Flex>
         <Stack
           align={"center"}
           spacing={{ base: 8, md: 10 }}

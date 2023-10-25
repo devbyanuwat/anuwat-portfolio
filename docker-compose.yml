@@ -1,25 +1,35 @@
 version: "3"
-
 services:
-  nextjs:
-    build:
-      context: . # Path to your Next.js app directory
-      dockerfile: Dockerfile # Path to the Dockerfile for Next.js
+  web:
+    build: ./nginx
     ports:
-      - "3000:3000" # Map the Next.js app port
-    networks:
-      - mynetwork
-
-  nginx:
-    build:
-      context: ./nginx-conf # Path to the directory containing Nginx configuration
-      dockerfile: Dockerfile # Path to the Dockerfile for Nginx
-    ports:
-      - "80:80" # Map the Nginx server port
-    networks:
-      - mynetwork
+      - "80:80"
     depends_on:
-      - nextjs
+      - api
+    # volumes:
+    #   - ./frontend/build:/app/frontend/build
+    networks:
+      - my_network
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - my_network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+    networks:
+      - my_network
 
 networks:
-  mynetwork:
+  my_network:
