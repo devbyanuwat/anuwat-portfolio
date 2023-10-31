@@ -14,29 +14,23 @@ import {
 const milestones = [
   {
     id: 1,
-    date: "MARCH 30, 2022",
-    title: "Chakra Hackathon",
-    description: `Winner of first ever ChakraUI Hackathon. On sait depuis longtemps que travailler avec du texte lisible et contenant du sens.`,
+    date: "January - present, 2023",
+    title: "Laravel8: INSURANCE API",
+    description:
+      "ประชุมร่วมกับ LMG และ 7Peaks เกี่ยวกับการรับและการส่งข้อมูล ทำการพัฒนา API เพื่อรับและส่งข้อมูลจาก 7Peaks.",
   },
   {
     id: 2,
-    date: "July 30, 2021",
-    title: "Open Source, first contribution",
-    description: `Fixing a typo, to fix a bug, contributing to Open Source and collaborating to improve technology for everyone, Ahmad's world changed again!.`,
+    date: "June - present, 2023",
+    title: "Feature: Back office",
+    description: "",
   },
   {
     id: 3,
-    date: "July 30, 2018",
-    title: "Freelancing, started working for myself",
+    date: "October - present, 2023",
+    title: "Jira: Management",
     description:
-      "Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.",
-  },
-  {
-    id: 4,
-    date: "July 30, 2018",
-    title: "Freelancing, started working for myself",
-    description:
-      "Ahmad starts his own business consulting for companies as a fullstack developer. Clients include UK Government departments, UK banks, global fintechs and startups.",
+      "รวบรวมงาน ทำการประชุมทีมเพื่อมอบหมายงานและส่งรายงานการทำงานของพนักงานทีม Developer.",
   },
 ];
 
@@ -47,7 +41,10 @@ const TimeLine = () => {
   return (
     <Container maxWidth="7xl" p={{ base: 2, sm: 10 }}>
       <chakra.h3 fontSize="4xl" fontWeight="bold" mb={18} textAlign="center">
-        Timeline
+        <Text fontSize={30}>งานที่ได้รับมอบหมาย</Text>{" "}
+        <Text fontSize={20} color={"grey"}>
+          Task Assigned
+        </Text>
       </chakra.h3>
       {milestones.map((milestone) => (
         <Flex key={milestone.id} mb="10px">

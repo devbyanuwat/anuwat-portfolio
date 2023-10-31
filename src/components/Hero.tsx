@@ -17,6 +17,9 @@ import {
 } from "@chakra-ui/react";
 
 export default function Hero() {
+  const text = " Hi, I'm anuwat";
+  const details =
+    "แฟ้มสะสมผลงานสหกิจศึกษาเป็นแฟ้มที่รวบรวมผลงานสหกิจศึกษาที่นักศึกษาได้ทำในระยะเวลาฝึกสหกิจศึกษาเป็นระยะเวลา 10 เดือน";
   return (
     <Stack
       align={"center"}
@@ -46,18 +49,13 @@ export default function Hero() {
               zIndex: -1,
             }}
           >
-            Nice to meet you
+            {text}
           </Text>
           <br />
-          <Text as={"span"} color={"red.400"}>
-            Welcome to my portfolio!
-          </Text>
         </Heading>
-        <Text color={"gray.500"}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque id
-          praesentium dolores assumenda accusantium cumque nihil temporibus?
-          Ducimus tenetur minima magnam, sint deserunt officiis. Assumenda
-          tempora voluptatibus sequi fuga laboriosam.
+
+        <Text as={"p"} fontSize={20} color={"gray.500"}>
+          {details}
         </Text>
       </Stack>
       <Flex
@@ -84,18 +82,6 @@ export default function Hero() {
           width={"full"}
           overflow={"hidden"}
         >
-          <IconButton
-            aria-label={"Play Button"}
-            variant={"ghost"}
-            _hover={{ bg: "transparent" }}
-            icon={<PlayIcon w={12} h={12} />}
-            size={"lg"}
-            color={"white"}
-            position={"absolute"}
-            left={"50%"}
-            top={"50%"}
-            transform={"translateX(-50%) translateY(-50%)"}
-          />
           <Image
             alt={"Hero Image"}
             fit={"cover"}

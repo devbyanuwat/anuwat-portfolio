@@ -43,9 +43,20 @@ export default function Home() {
         <Box maxW={"6xl"} p={5} width={"full"}>
           <Hero />
         </Box>
+        <Flex justify={"center"}>
+          <Box alignItems={"center"}>
+            <Text fontSize={30} textAlign={"center"}>
+              แผนผังหน่วยงาน
+            </Text>
+            <Text fontSize={20} color={"grey"} textAlign={"center"}>
+              Organizational chart{" "}
+            </Text>
+          </Box>
+        </Flex>
         <CardPothai />
-        <hr />
+
         <Flex
+          paddingTop={3}
           gap={6}
           justify={"center"}
           direction={{ base: "column", md: "row" }}
