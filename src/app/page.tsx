@@ -38,7 +38,7 @@ export default function Home() {
   });
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Container maxW={"6xl"} p={1}>
         <Box maxW={"6xl"} p={5} width={"full"}>
           <Hero />
@@ -71,52 +71,43 @@ export default function Home() {
             <TimeLine />
           </Box>
         </Flex>
-        <Stack
+      </Container>
+      <Stack
+        align={"center"}
+        w={"full"}
+        spacing={{ base: 8, md: 10 }}
+        py={{ base: 10, md: 18 }}
+        direction={{ base: "column", md: "row" }}
+        justifyContent={"center"}
+        bg={"gray.200"}
+      >
+        <Flex
+          flex={1}
+          justify={"space-between"}
           align={"center"}
-          spacing={{ base: 8, md: 10 }}
-          py={{ base: 20, md: 28 }}
+          position={"relative"}
+          w={"full"}
           direction={{ base: "column", md: "row" }}
-          justifyContent={"center"}
+          gap={7}
         >
-          <Flex
-            flex={1}
-            justify={"center"}
-            align={"center"}
-            position={"relative"}
-            w={"full"}
-          >
-            <Box justifyContent={"center"}>
-              <Flex
-                flex={1}
-                justify={"center"}
-                align={"center"}
-                position={"relative"}
-                w={"full"}
-              >
-                <Card />
-              </Flex>
-              <Flex
-                flex={1}
-                justify={"center"}
-                align={"center"}
-                position={"relative"}
-                w={"full"}
-              >
-                <Card />
-              </Flex>
-              <Flex
-                flex={1}
-                justify={"center"}
-                align={"center"}
-                position={"relative"}
-                w={"full"}
-              >
-                <Card />
-              </Flex>
+          <Flex justify={"center"} w={"full"}>
+            <Box alignItems={"center"}>
+              <Text fontSize={30} textAlign={"center"} m="6">
+                โครงงานสหกิจ
+              </Text>
+              <Text fontSize={20} color={"grey"} textAlign={"center"}>
+                Project
+              </Text>
             </Box>
           </Flex>
-        </Stack>
-      </Container>
+          <Flex justify={"center"} w={"full"}>
+            <Box alignItems={"center"}>
+              <Card />
+            </Box>
+          </Flex>
+        </Flex>
+      </Stack>
+
       <Testimonials />
       <Footer />
     </>

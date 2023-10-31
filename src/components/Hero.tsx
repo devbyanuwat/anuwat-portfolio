@@ -76,7 +76,7 @@ export default function Hero() {
         />
         <Box
           position={"relative"}
-          height={"300px"}
+          height={"500px"}
           rounded={"2xl"}
           boxShadow={"2xl"}
           width={"full"}
@@ -86,11 +86,9 @@ export default function Hero() {
             alt={"Hero Image"}
             fit={"cover"}
             align={"center"}
-            w={"100%"}
-            h={"100%"}
-            src={
-              "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
-            }
+            w={"full"}
+            h={"900px"}
+            src="static/images/profile.png"
           />
         </Box>
       </Flex>
