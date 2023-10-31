@@ -73,7 +73,7 @@ export default function blogPostWithImage() {
     <Card maxW="lg">
       <CardBody>
         <Image
-          src="/static/images/bos.png"
+          src="/static/Images/bos.png"
           width={600}
           height={200}
           alt="Green double couch with wooden legs"
