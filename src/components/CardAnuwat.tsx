@@ -11,7 +11,7 @@ import {
   Avatar,
 } from "@chakra-ui/react";
 
-const IMAGE = "/static/Images/profile.png";
+const IMAGE = "/static/Images/fill-profile.png";
 
 export default function CardAnuwat() {
   return (
