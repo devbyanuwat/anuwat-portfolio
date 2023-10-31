@@ -88,7 +88,7 @@ export default function Hero() {
             style={{ objectFit: "contain" }}
             width={"500"}
             height={"500"}
-            src="/static/images/profile.png"
+            src="/static/Images/profile.png"
           />
         </Box>
       </Flex>
