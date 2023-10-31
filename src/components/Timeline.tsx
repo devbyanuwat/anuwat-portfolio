@@ -23,7 +23,8 @@ const milestones = [
     id: 2,
     date: "June - present, 2023",
     title: "Feature: Back office",
-    description: "",
+    description:
+      "หน้าเว็ปไซต์สำหรับแสดงข้อมูลการลูกค้า Dashbarod รวบรวมข้อมูลเกี่ยวกับการออกประกัน",
   },
   {
     id: 3,
