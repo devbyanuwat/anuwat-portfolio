@@ -8,13 +8,14 @@ import {
   Heading,
   Text,
   Button,
-  Image,
   Icon,
   IconButton,
   createIcon,
   IconProps,
   useColorModeValue,
 } from "@chakra-ui/react";
+
+import Image from "next/image";
 
 export default function Hero() {
   const text = " Hi, I'm anuwat";
@@ -84,11 +85,10 @@ export default function Hero() {
         >
           <Image
             alt={"Hero Image"}
-            fit={"cover"}
-            align={"center"}
-            w={"full"}
-            h={"900px"}
-            src="static/images/profile.png"
+            style={{ objectFit: "contain" }}
+            width={"500"}
+            height={"500"}
+            src="/static/images/profile.png"
           />
         </Box>
       </Flex>
