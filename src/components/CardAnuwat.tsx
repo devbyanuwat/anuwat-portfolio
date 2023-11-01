@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 
 const IMAGE =
-  "https://scontent.fbkk7-3.fna.fbcdn.net/v/t39.30808-6/327322070_698153178475695_3218884610407369476_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=eBCDCLZViW4AX8J9na0&_nc_ht=scontent.fbkk7-3.fna&_nc_e2o=f&oh=00_AfCxr9PY89c_XEtBW2WaZxjg3yIVFOc1YvCluQJMarzD8A&oe=653CE1C4";
+  "https://firebasestorage.googleapis.com/v0/b/anuwat-portfolio.appspot.com/o/fill-portfolio.jpeg?alt=media&token=1e47c7c8-4eab-4ff0-8fec-786b266d974a&_gl=1*1ad89x0*_ga*MTM2NTg2ODY3My4xNjkxNTc1NTg3*_ga_CW55HF8NVT*MTY5ODgwNDc3OS4zOC4xLjE2OTg4MDQ4OTAuMzEuMC4w";
 
 export default function CardAnuwat() {
   return (
