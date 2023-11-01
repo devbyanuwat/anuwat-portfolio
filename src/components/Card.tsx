@@ -82,19 +82,29 @@ export default function blogPostWithImage() {
           <Heading size="md">
             LMG INSURANCE <Code>API</Code>
           </Heading>
-          <Text>
-            This sofa is perfect for modern tropical spaces, baroque inspired
-            spaces, earthy toned spaces and for people who love a chic design
-            with a sprinkle of vintage design.
-          </Text>
+          <Stack direction={"row"}>
+            <Text>
+              ระบบออกพรบ. และกธ. โดยมีการพัฒนาด้วยเครื่องมือ{" "}
+              <Badge variant="outline" colorScheme="red">
+                Laravel8
+              </Badge>{" "}
+              <Badge variant="outline" colorScheme="green">
+                Line notify
+              </Badge>{" "}
+              และสามารถตรวจสอบการทำงานหรือรายชื่อผู้ใช้ ยอดขาย และกราฟได้โดย{" "}
+              <Badge variant="outline" colorScheme="yellow">
+                web service
+              </Badge>
+            </Text>
+          </Stack>
         </Stack>
       </CardBody>
       <Divider />
-      <CardFooter>
+      {/* <CardFooter>
         <ButtonGroup spacing="2" justifyContent={"end"} w={"full"}>
           <BackdropExample />
         </ButtonGroup>
-      </CardFooter>
+      </CardFooter> */}
     </Card>
   );
 }
