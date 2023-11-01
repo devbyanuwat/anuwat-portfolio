@@ -108,7 +108,7 @@ export default function Home() {
         </Flex>
       </Stack>
 
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer />
     </>
   );

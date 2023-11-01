@@ -9,7 +9,13 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaGitlab,
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 import { ReactNode } from "react";
 
 const SocialButton = ({
@@ -61,14 +67,25 @@ export default function Footer() {
       >
         <Text>© 2023 Anuwat portfolio</Text>
         <Stack direction={"row"} spacing={6}>
-          <SocialButton label={"Twitter"} href={"#"}>
-            <FaTwitter />
+          <SocialButton
+            label={"Facebook"}
+            href={"www.facebook.com/anuwat.tansanguan"}
+          >
+            <FaFacebook />
           </SocialButton>
-          <SocialButton label={"YouTube"} href={"#"}>
-            <FaYoutube />
-          </SocialButton>
-          <SocialButton label={"Instagram"} href={"#"}>
+          <SocialButton
+            label={"Instargram"}
+            href={
+              "https://instagram.com/anuuwattttt?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
+            }
+          >
             <FaInstagram />
+          </SocialButton>
+          <SocialButton
+            label={"Gitlab"}
+            href={"https://gitlab.com/mailfordevbyanuwat"}
+          >
+            <FaGitlab />
           </SocialButton>
         </Stack>
       </Container>
