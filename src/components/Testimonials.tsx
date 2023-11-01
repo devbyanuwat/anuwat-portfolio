@@ -6,7 +6,7 @@ export default function Testimonials() {
   function MyImage() {
     return (
       <Avatar
-        src="/static/images/profile.png"
+        src="/static/images/profile.PNG"
         // alt="Insurance"
         // width={100}
         // height={80}
